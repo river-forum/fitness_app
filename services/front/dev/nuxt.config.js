@@ -68,4 +68,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  storybook: {
+    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+  },
 }
