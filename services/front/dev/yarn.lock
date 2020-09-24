@@ -1733,7 +1733,7 @@
     consola "^2.15.0"
     defu "^3.1.0"
 
-"@nuxtjs/composition-api@^0.12.5":
+"@nuxtjs/composition-api@0.12.5":
   version "0.12.5"
   resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.12.5.tgz#0603d36da64ecb573ce222ad1aee74ee3f5b9756"
   integrity sha512-srUwqaxwc4/8nKH68kDaMn0+3H2LD7awpjFdtzQWFiGK0Go38hrIsR+W7Xi1K5wC3kDo9SaNt9nvZy8d8VauDw==
