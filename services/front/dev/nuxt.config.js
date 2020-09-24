@@ -50,6 +50,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    // Doc: https://composition-api.nuxtjs.org/setup
+    '@nuxtjs/composition-api',
   ],
   /*
    ** Nuxt.js modules
