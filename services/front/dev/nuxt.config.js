@@ -71,6 +71,6 @@ export default {
    */
   build: {},
   storybook: {
-    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+    addons: ['@storybook/addon-controls', '@storybook/addon-docs'],
   },
 }

@@ -56,6 +56,9 @@
 <script>
 import { defineComponent, ref, computed } from '@nuxtjs/composition-api'
 
+/**
+ * #Footerコンポーネント(SP幅専用)
+ */
 export default defineComponent({
   setup() {
     const current = ref('grid')
