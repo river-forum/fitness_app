@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component renders correctly 1`] = `
+"<div class=\\"flex items-center justify-between px-8 py-5 max-w-md relative\\" style=\\"background-color: rgb(59, 59, 59);\\">
+  <div class=\\"absolute text-white rounded-full bg-green-500 cursor-pointer\\" style=\\"top: 0px; left: 50%; transform: translate(-50%, -50%);\\"><img src=\\"@/assets/icons/add.svg\\" width=\\"20\\" height=\\"20\\" alt=\\"add\\" class=\\"m-3 hover:opacity-75\\"></div> <img src=\\"@/assets/icons/grid.svg\\" width=\\"25\\" height=\\"25\\" alt=\\"grid\\" class=\\"cursor-pointer hover:opacity-75 opacity-100\\"> <img src=\\"@/assets/icons/dumbbell.svg\\" width=\\"25\\" height=\\"25\\" alt=\\"dumbbell\\" class=\\"cursor-pointer hover:opacity-75 opacity-25\\"> <img src=\\"@/assets/icons/graph.svg\\" width=\\"25\\" height=\\"25\\" alt=\\"graph\\" class=\\"cursor-pointer hover:opacity-75 opacity-25\\"> <img src=\\"@/assets/icons/calendar.svg\\" width=\\"25\\" height=\\"25\\" alt=\\"calendar\\" class=\\"cursor-pointer hover:opacity-75 opacity-25\\">
+</div>"
+`;
