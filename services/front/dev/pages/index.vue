@@ -1,9 +1,14 @@
 <template>
   <div class="container">
-    <div></div>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {}
+import Footer from '@/components/screen/common/footer/Footer'
+export default {
+  components: {
+    Footer,
+  },
+}
 </script>

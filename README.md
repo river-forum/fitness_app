@@ -9,4 +9,5 @@
 
 ## 展開サイト一覧
 
+- [App](https://fitness-app-d5043.web.app/)
 - [Storybook](https://storybook-fitness-app.web.app/)

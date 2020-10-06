@@ -6,12 +6,8 @@
   "hosting": [
     {
       "target": "app",
-      "public": "./dev/.nuxt",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "public": "./dev/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",
@@ -23,11 +19,7 @@
       "target": "storybook",
       "predeploy": "npm --prefix dev run storybook:build",
       "public": "./dev/storybook-static",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",
