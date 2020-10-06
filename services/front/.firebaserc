@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "fitness-app-d5043"
+  },
+  "targets": {
+    "fitness-app-d5043": {
+      "hosting": {
+        "storybook": [
+          "storybook-fitness-app"
+        ],
+        "app": [
+          "fitness-app-d5043"
+        ]
+      }
+    }
+  }
+}
