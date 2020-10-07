@@ -1,5 +1,7 @@
 # fitness_app
 
+![QA](https://github.com/river-forum/fitness_app/workflows/QA/badge.svg)
+
 ## 画像素材 URL
 
 - [ログイン画面(準備中)](#)
