@@ -28,7 +28,7 @@
   "dependencies": {
     "@nuxtjs/axios": "5.12.2",
     "@nuxtjs/composition-api": "0.12.5",
-    "@nuxtjs/pwa": "3.1.1",
+    "@nuxtjs/pwa": "3.1.2",
     "core-js": "3.6.5",
     "nuxt": "2.14.6"
   },
