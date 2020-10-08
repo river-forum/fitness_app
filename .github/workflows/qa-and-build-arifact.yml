@@ -1,4 +1,4 @@
-name: QA
+name: QA and Build Arifact
 on:
   push:
     branches:
@@ -97,3 +97,73 @@ jobs:
         run: yarn test
 
     needs: setup
+
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: restore workspace cache
+        uses: actions/cache@v1
+        with:
+          path: ${{ github.workspace }}
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
+
+      - name: build nuxt
+        working-directory: ./services/front/dev
+        run: yarn generate
+
+      - name: build storybook
+        working-directory: ./services/front/dev
+        run: storybook:build
+
+    needs: test
+
+  artifact:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: restore workspace cache
+        uses: actions/cache@v1
+        with:
+          path: ${{ github.workspace }}
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
+
+      - name: Upload nuxt generate site
+        uses: actions/upload-artifact@v2
+        working-directory: ./services/front/dev
+        with:
+          name: nuxt-site
+          path: .
+
+      - name: Upload storybook site
+        uses: actions/upload-artifact@v2
+        working-directory: ./services/front/dev
+        with:
+          name: storybook
+          path: storybook-static
+
+    needs: test
