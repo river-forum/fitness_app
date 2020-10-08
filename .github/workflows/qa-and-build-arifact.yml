@@ -140,4 +140,4 @@ jobs:
           name: storybook
           path: services/front/dev/storybook-static
 
-    needs: test
+    needs: [lint, test]
