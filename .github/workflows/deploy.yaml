@@ -1,63 +1,23 @@
-name: deploy Nuxt to Firebase hosting
+name: Deploy Nuxt to Firebase hosting
 on: [workflow_dispatch]
 
 jobs:
-  setup:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [12]
+  build-deploy:
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-
       - name: checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0 # All history
 
-      - name: cache node_modules
-        id: node_modules_cache_id
-        uses: actions/cache@v1
+      - uses: actions/setup-node@v1
         with:
-          path: ./services/front/dev/node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          node-version: 12
 
       - name: install
         working-directory: ./services/front/dev
         run: yarn install --non-interactive
-
-      - name: cache workspace
-        uses: actions/cache@v1
-        with:
-          path: ${{ github.workspace }}
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
-
-  build-deploy:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [12]
-
-    steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: checkout
-        uses: actions/checkout@master
-
-      - name: restore workspace cache
-        uses: actions/cache@v1
-        with:
-          path: ${{ github.workspace }}
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
 
       - name: generate nuxt
         working-directory: ./services/front/dev
@@ -71,5 +31,3 @@ jobs:
 
       - name: Deploy nuxt generate to Firebase hosting
         run: ls -la
-
-    needs: setup
