@@ -1,6 +1,7 @@
 # fitness_app
 
-![QA](https://github.com/river-forum/fitness_app/workflows/QA/badge.svg)
+![QA and Build Arifact](https://github.com/river-forum/fitness_app/workflows/QA%20and%20Build%20Arifact/badge.svg)
+![Deploy Nuxt to Firebase hosting](https://github.com/river-forum/fitness_app/workflows/Deploy%20Nuxt%20to%20Firebase%20hosting/badge.svg)
 
 ## 画像素材 URL
 
