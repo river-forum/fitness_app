@@ -154,16 +154,14 @@ jobs:
 
       - name: Upload nuxt generate site
         uses: actions/upload-artifact@v2
-        working-directory: ./services/front/dev
         with:
           name: nuxt-site
-          path: .
+          path: services/front/dev
 
       - name: Upload storybook site
         uses: actions/upload-artifact@v2
-        working-directory: ./services/front/dev
         with:
           name: storybook
-          path: storybook-static
+          path: services/front/dev/storybook-static
 
     needs: test
