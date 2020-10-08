@@ -19,6 +19,14 @@ jobs:
         working-directory: ./services/front/dev
         run: yarn install --non-interactive
 
+      - name: lint
+        working-directory: ./services/front/dev
+        run: yarn lint
+
+      - name: test
+        working-directory: ./services/front/dev
+        run: yarn test
+
       - name: generate nuxt
         working-directory: ./services/front/dev
         run: yarn generate
