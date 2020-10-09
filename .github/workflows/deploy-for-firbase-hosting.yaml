@@ -39,4 +39,6 @@ jobs:
 
       - name: Deploy nuxt generate to Firebase hosting
         working-directory: ./services/front
-        run: make deploy-prod-for-app
+        run: |-
+          npm install -g firebase-tools
+          make deploy-prod-for-app
