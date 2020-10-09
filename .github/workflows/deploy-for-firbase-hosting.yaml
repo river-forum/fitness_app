@@ -38,4 +38,9 @@ jobs:
           path: services/front/dev/dist
 
       - name: Deploy nuxt generate to Firebase hosting
-        run: ls -la
+        working-directory: ./services/front/dev
+        uses: w9jds/firebase-action@master
+        with:
+          args: make deploy-prod-for-app
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
