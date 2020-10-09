@@ -96,4 +96,9 @@ jobs:
         working-directory: ./services/front/dev
         run: yarn test
 
+      - name: codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: bash <(curl -s https://codecov.io/bash)
+
     needs: setup

@@ -2,6 +2,7 @@
 
 ![QA and Build Arifact](https://github.com/river-forum/fitness_app/workflows/QA%20and%20Build%20Arifact/badge.svg)
 ![Deploy Nuxt to Firebase hosting](https://github.com/river-forum/fitness_app/workflows/Deploy%20Nuxt%20to%20Firebase%20hosting/badge.svg)
+[![codecov](https://codecov.io/gh/river-forum/fitness_app/branch/develop/graph/badge.svg)](https://codecov.io/gh/river-forum/fitness_app)
 
 ## 画像素材 URL
 
