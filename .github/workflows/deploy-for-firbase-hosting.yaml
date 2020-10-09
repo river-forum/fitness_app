@@ -38,5 +38,5 @@ jobs:
           path: services/front/dev/dist
 
       - name: Deploy nuxt generate to Firebase hosting
-        working-directory: ./services/front/dev
+        working-directory: ./services/front
         run: make deploy-prod-for-app
