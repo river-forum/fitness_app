@@ -15,3 +15,4 @@
 
 - [App](https://fitness-app-d5043.web.app/)
 - [Storybook](https://storybook-fitness-app.web.app/)
+- [Codecov](https://codecov.io/gh/river-forum/fitness_app)
