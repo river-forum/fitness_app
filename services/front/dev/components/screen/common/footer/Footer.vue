@@ -9,7 +9,7 @@
     >
       <img
         class="m-3 hover:opacity-75"
-        src="@/assets/icons/add.svg"
+        src="~assets/icons/add.svg"
         width="20"
         height="20"
         alt="add"
@@ -18,7 +18,7 @@
     <img
       class="cursor-pointer hover:opacity-75"
       :class="active('grid')"
-      src="@/assets/icons/grid.svg"
+      src="~assets/icons/grid.svg"
       width="25"
       height="25"
       alt="grid"
@@ -27,7 +27,7 @@
     <img
       class="cursor-pointer hover:opacity-75"
       :class="active('dumbbell')"
-      src="@/assets/icons/dumbbell.svg"
+      src="~assets/icons/dumbbell.svg"
       width="25"
       height="25"
       alt="dumbbell"
@@ -36,7 +36,7 @@
     <img
       class="cursor-pointer hover:opacity-75"
       :class="active('graph')"
-      src="@/assets/icons/graph.svg"
+      src="~assets/icons/graph.svg"
       width="25"
       height="25"
       alt="graph"
@@ -45,7 +45,7 @@
     <img
       class="cursor-pointer hover:opacity-75"
       :class="active('calendar')"
-      src="@/assets/icons/calendar.svg"
+      src="~assets/icons/calendar.svg"
       width="25"
       height="25"
       alt="calendar"

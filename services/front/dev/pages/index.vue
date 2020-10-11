@@ -1,17 +1,14 @@
 <template>
   <div class="container">
-    <div>
-      <Test />
-      <Display />
-    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Display from '~/components/screen/list/Display'
+import Footer from '@/components/screen/common/footer/Footer'
 export default {
   components: {
-    Display,
+    Footer,
   },
 }
 </script>
