@@ -4,101 +4,116 @@
       <div class="ymd absolute right-0 top-0">
         <ul class="ymd__contents flex">
           <li class="ymd__li opacity-75">
-            <button class="py-1 px-4 bg-black text-white font-bold">D</button>
+            <button
+              class="py-1 px-4 bg-black text-white font-bold"
+              @click="changeEventListener('d')"
+            >
+              D
+            </button>
           </li>
           <li class="ymd__li opacity-75">
-            <button class="py-1 px-4 bg-black text-white font-bold">W</button>
+            <button
+              class="py-1 px-4 bg-black text-white font-bold"
+              @click="changeEventListener('w')"
+            >
+              W
+            </button>
           </li>
           <li class="ymd__li opacity-75">
-            <button class="py-1 px-4 bg-black text-white font-bold">M</button>
+            <button
+              class="py-1 px-4 bg-black text-white font-bold"
+              @click="changeEventListener('m')"
+            >
+              M
+            </button>
           </li>
         </ul>
       </div>
       <div class="date text-white">
-        <div class="date__current-month font-bold">9</div>
-        <ul class="date__day flex overflow-scroll">
-          <li class="day">
-            <button class="day__btn is-active">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
+        <template v-if="current === 'd'">
+          <div class="date__current-month font-bold">9</div>
+          <ul class="date__day flex overflow-scroll">
+            <li v-for="record in records" :key="record.date" class="day">
+              <button
+                class="day__btn"
+                :class="record.active ? 'is-active' : ''"
               >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn is-active">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-          <li class="day">
-            <button class="day__btn">
-              <span class="day__num">13</span><br /><span class="day__of-week"
-                >SUN</span
-              >
-            </button>
-          </li>
-        </ul>
+                <span class="day__num">{{ record.date.date() }}</span>
+                <br /><span class="day__of-week">{{ record.dayStr }}</span>
+              </button>
+            </li>
+          </ul>
+        </template>
+
+        <template v-if="current === 'w'">
+          <div class="flex overflow-x-scroll" style="min-height: 112px">
+            <div
+              v-for="record in records"
+              :key="record.date"
+              class="font-bold pr-6"
+              style="min-width: 70px"
+            >
+              <p>{{ record.week.month + 1 }}月</p>
+              <p>{{ record.week.week + 1 }}週目</p>
+              <template v-if="record.active">
+                <p>◯</p>
+              </template>
+            </div>
+          </div>
+        </template>
+
+        <template v-if="current === 'm'">
+          <div class="flex" style="min-height: 112px">
+            <div
+              v-for="record in records"
+              :key="record.date"
+              class="font-bold text-xl pr-6"
+            >
+              <p>{{ record.date.months() + 1 }}月</p>
+              <template v-if="record.active">
+                <p>◯</p>
+              </template>
+            </div>
+          </div>
+        </template>
       </div>
     </div>
   </div>
 </template>
+<script>
+import { defineComponent, ref, computed } from '@nuxtjs/composition-api'
+import {
+  getRecordsOnDay,
+  getRecordsOnWeek,
+  getRecordsMonth,
+} from '~/components/screen/common/calendar/records'
+
+export default defineComponent({
+  setup() {
+    const current = ref('d')
+    const records = computed(() => {
+      switch (current.value) {
+        case 'd':
+          return getRecordsOnDay()
+        case 'w':
+          console.log(getRecordsOnWeek())
+          return getRecordsOnWeek()
+        case 'm':
+          return getRecordsMonth()
+      }
+    })
+
+    function changeEventListener(_current) {
+      current.value = _current
+    }
+    return {
+      changeEventListener,
+      records,
+      current,
+    }
+  },
+})
+</script>
 <style lang="scss">
 .date {
   &__day {
