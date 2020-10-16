@@ -1918,10 +1918,10 @@
     consola "^2.15.0"
     defu "^3.1.0"
 
-"@nuxtjs/composition-api@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.13.2.tgz#19802327fdee71b7351b811be9477d75fb59cda0"
-  integrity sha512-158Taf7ZCt97ppJU9gdB0pWjBROG/+Xol7AkIWhecZORq3y9QgAatz/s8TjtUCuXC8pI0QcnAj9VCJUXueLRjg==
+"@nuxtjs/composition-api@0.13.3":
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.13.3.tgz#9ea960588f4c5142edf59fdf4537c79639011480"
+  integrity sha512-4ilC3jaDweVoyWZhSImJXnFE1lA2bc+AWO44EznrCBnBXCyuG9lNNUBRaho0YfqBeb1w+463MviDVy0vE0z5Gg==
   dependencies:
     "@vue/composition-api" "1.0.0-beta.16"
     defu "^3.1.0"
