@@ -3,20 +3,14 @@
     <div class="calendar__wrap p-2 pb-0 bg-green-500 relative">
       <div class="ymd absolute right-0 top-0">
         <ul class="ymd__contents flex">
-          <li
-            class="ymd__li py-1 px-4 opacity-75 bg-black text-white font-bold"
-          >
-            D
+          <li class="ymd__li opacity-75">
+            <button class="py-1 px-4 bg-black text-white font-bold">D</button>
           </li>
-          <li
-            class="ymd__li py-1 px-4 opacity-75 bg-black text-white font-bold"
-          >
-            W
+          <li class="ymd__li opacity-75">
+            <button class="py-1 px-4 bg-black text-white font-bold">W</button>
           </li>
-          <li
-            class="ymd__li py-1 px-4 opacity-75 bg-black text-white font-bold"
-          >
-            M
+          <li class="ymd__li opacity-75">
+            <button class="py-1 px-4 bg-black text-white font-bold">M</button>
           </li>
         </ul>
       </div>
@@ -105,7 +99,6 @@
     </div>
   </div>
 </template>
-
 <style lang="scss">
 .date {
   &__day {
