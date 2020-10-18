@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "5.12.2",
-    "@nuxtjs/composition-api": "0.13.4",
+    "@nuxtjs/composition-api": "0.13.5",
     "@nuxtjs/pwa": "3.2.2",
     "core-js": "3.6.5",
     "lodash": "^4.17.20",
