@@ -33,7 +33,11 @@
         <template v-if="current === 'd'">
           <div class="date__current-month font-bold">9</div>
           <ul class="date__day flex overflow-scroll">
-            <li v-for="(record, index) in records" :key="index" class="day">
+            <li
+              v-for="record in records"
+              :key="record.date.toString()"
+              class="day"
+            >
               <button
                 class="day__btn"
                 :class="record.active ? 'is-active' : ''"
@@ -48,8 +52,8 @@
         <template v-if="current === 'w'">
           <div class="flex overflow-x-scroll" style="min-height: 112px">
             <div
-              v-for="(record, index) in records"
-              :key="index"
+              v-for="record in records"
+              :key="record.date.toString()"
               class="font-bold pr-6"
               style="min-width: 70px"
             >
@@ -64,11 +68,11 @@
         <template v-if="current === 'm'">
           <div class="flex" style="min-height: 112px">
             <div
-              v-for="(record, index) in records"
-              :key="index"
+              v-for="record in records"
+              :key="record.date.toString()"
               class="font-bold text-xl pr-6"
             >
-              <p>{{ record.date.months() + 1 }}月</p>
+              <p>{{ record.date.month() + 1 }}月</p>
               <template v-if="record.active">
                 <p>◯</p>
               </template>
