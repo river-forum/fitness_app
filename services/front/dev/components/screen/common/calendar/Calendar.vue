@@ -1,6 +1,6 @@
 <template>
   <div class="calendar max-w-md">
-    <div class="calendar__wrap p-2 pb-0 bg-green-500 relative">
+    <div class="calendar__wrap p-4 pb-0 bg-green-500 relative">
       <div class="ymd absolute right-0 top-0">
         <ul class="ymd__contents flex">
           <li class="ymd__li opacity-75">
@@ -31,7 +31,9 @@
       </div>
       <div class="date text-white">
         <template v-if="current === 'd'">
-          <div class="date__current-month font-bold">9</div>
+          <div class="date__current-month font-bold">
+            {{ records.currntMonth }}
+          </div>
           <ul class="date__day flex overflow-scroll">
             <li v-for="(record, index) in records" :key="index" class="day">
               <button

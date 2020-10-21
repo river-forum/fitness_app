@@ -24,29 +24,47 @@ const DATA = [
   },
 ]
 
+// 今現在から過去2ヶ月分の差分をゲットする //
+
 const getDatesDiff = (startDate, endDate, dateFormat = 'YYYY-MM-DD') => {
+  // startDate 2ヶ月前 endDate 今現在 //
+
   const getDateAsArray = (date) => {
     return moment(date.split(/\D+/), dateFormat)
   }
+
+  // 今現在と過去2ヶ月分の差分をdiff入れる
   const diff =
     getDateAsArray(endDate).diff(getDateAsArray(startDate), 'days') + 1
+
   const dates = []
+
   for (let i = 0; i < diff; i++) {
+    // forで回してdatesにdiff分の日付等のデータを入れる
     const nextDate = getDateAsArray(startDate).add(i, 'day')
     dates.push(nextDate)
   }
+
   return dates
 }
 
+// {date: Moment, dayStr: "火", active: false} こんな感じでオブジェクト返してくれる
 export const getRecordsOnDay = () => {
   return getDatesDiff(
+    // 2ヶ月前をYYYY-MM-DD
     moment().subtract(2, 'months').format('YYYY-MM-DD'),
+    // YYYY-MM-DDにフォーマット
     moment().format('YYYY-MM-DD')
+    // dateにはgetDatesDiffで取得したものが入る
   ).map((date) => {
     return {
       date,
+      currntMonth: date.month(),
+      // .day()は曜日を0~6でかえす
       dayStr: ['日', '月', '火', '水', '木', '金', '土'][date.day()],
+      // DATAとかぶっている箇所にactiveをつける
       active: !!DATA.find(
+        // Q:!!にする理由
         (item) =>
           moment(item.createdAt).format('YYYY-MM-DD') ===
           date.format('YYYY-MM-DD')
@@ -55,9 +73,11 @@ export const getRecordsOnDay = () => {
   })
 }
 
+// 週を取得する
 export const getRecordsOnWeek = () => {
   function getDate(date) {
     const lastDayOfWeek = date.endOf('week')
+    // Q: これを複製するのは??
     const firstDayOfMonth = lastDayOfWeek.clone().startOf('month')
 
     return {
@@ -68,13 +88,16 @@ export const getRecordsOnWeek = () => {
   }
 
   return _.uniqBy(
+    // 配列から一意な値を取得する
     getDatesDiff(
-      moment().subtract(2, 'months').format('YYYY-MM'),
-      moment().format('YYYY-MM')
+      moment().subtract(2, 'months').format('YYYY-MM'), // 2ヶ月前
+      moment().format('YYYY-MM') // 今現在
     ).map((date) => {
       return {
         date,
+        currntMonth: date.month(),
         week: getDate(date),
+        // Q:dayStrの取得する理由
         dayStr: ['日', '月', '火', '水', '木', '金', '土'][date.day()],
         // TODO ミスってる
         active: !!DATA.find(
@@ -95,6 +118,7 @@ export const getRecordsMonth = () => {
     ).map((date) => {
       return {
         date,
+        currntMonth: date.month(),
         dayStr: ['日', '月', '火', '水', '木', '金', '土'][date.day()],
         active: !!DATA.find(
           (item) =>
