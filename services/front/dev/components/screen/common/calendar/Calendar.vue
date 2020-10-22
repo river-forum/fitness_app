@@ -59,7 +59,9 @@
               class="font-bold pr-6"
               style="min-width: 70px"
             >
-              <p>{{ record.week.week + 1 }}週目</p>
+              <p>{{ record.month }}月</p>
+              <p>{{ record.week.firstDateOnWeek }}</p>
+              <p>{{ record.week.lastDateOnWeek }}</p>
               <template v-if="record.active">
                 <p>◯</p>
               </template>

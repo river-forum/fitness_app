@@ -73,31 +73,29 @@ export const getRecordsOnDay = () => {
   })
 }
 
+function getDate(_date) {
+  const targetDate = moment('2020-01-01 00:00:00')
+    .add((_date.week() - 1) * 7, 'day')
+    .clone()
+  return {
+    firstDateOnWeek: targetDate.startOf('week').format('YYYY-MM-DD'),
+    lastDateOnWeek: targetDate.endOf('week').format('YYYY-MM-DD'),
+  }
+}
+
 // 週を取得する
 export const getRecordsOnWeek = () => {
-  function getDate(date) {
-    const lastDayOfWeek = date.endOf('week')
-    // Q: これを複製するのは??
-    const firstDayOfMonth = lastDayOfWeek.clone().startOf('month')
-
-    return {
-      year: lastDayOfWeek.year(),
-      month: lastDayOfWeek.month(),
-      week: lastDayOfWeek.diff(firstDayOfMonth, 'weeks'),
-    }
-  }
-
   return _.uniqBy(
     // 配列から一意な値を取得する
     getDatesDiff(
-      moment().subtract(2, 'months').format('YYYY-MM'), // 2ヶ月前
-      moment().format('YYYY-MM') // 今現在
+      moment().subtract(2, 'months').format('YYYY-MM-DD'), // 2ヶ月前
+      moment().format('YYYY-MM-DD') // 今現在
     ).map((date) => {
+      date = date.clone()
       return {
         date,
-        currntMonth: date.month(),
-        week: getDate(date),
-        // Q:dayStrの取得する理由
+        month: date.month() + 1,
+        week: getDate(date.clone()),
         dayStr: ['日', '月', '火', '水', '木', '金', '土'][date.day()],
         // TODO ミスってる
         active: !!DATA.find(
@@ -106,7 +104,7 @@ export const getRecordsOnWeek = () => {
         ),
       }
     }),
-    (item) => item.week.year + '' + item.week.month + '' + item.week.week
+    (item) => item.week.firstDateOnWeek + '' + item.week.lastDateOnWeek
   )
 }
 
