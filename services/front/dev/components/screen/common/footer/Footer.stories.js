@@ -1,7 +1,7 @@
 import Footer from './Footer.vue'
 
 export default {
-  title: 'screen.common.footer.Footer',
+  title: 'screen/common/footer/Footer',
   component: Footer,
 }
 

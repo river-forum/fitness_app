@@ -1,7 +1,7 @@
 import TrainingLabelItem from './TrainingLabelItem.vue'
 
 export default {
-  title: 'screen.common.TrainingLabel.TrainingLabelItem',
+  title: 'screen/common/TrainingLabel/TrainingLabelItem',
   component: TrainingLabelItem,
 }
 

@@ -1,47 +1,38 @@
 <template>
   <div class="label-wrapper flex">
-    <TrainingLabelItem
-      current-color="red"
-      class="px-2"
-      js-btn
-      :class="[activeIdx === 1 ? 'is-active' : '']"
-      @click.native="activeIdx = 1"
-    />
-    <TrainingLabelItem
-      current-color="blue"
-      class="px-2"
-      js-btn
-      :class="[activeIdx === 2 ? 'is-active' : '']"
-      @click.native="activeIdx = 2"
-    />
-    <TrainingLabelItem
-      current-color="green"
-      class="px-2"
-      js-btn
-      :class="[activeIdx === 3 ? 'is-active' : '']"
-      @click.native="activeIdx = 3"
-    />
-    <TrainingLabelItem
-      current-color="yellow"
-      class="px-2"
-      js-btn
-      :class="[activeIdx === 4 ? 'is-active' : '']"
-      @click.native="activeIdx = 4"
-    />
+    <RunTrainingLabel :current="current" @selected="selectedListener" />
+    <MachineTrainingLabel :current="current" @selected="selectedListener" />
+    <StretchTrainingLabel :current="current" @selected="selectedListener" />
+    <WeightTrainingLabel :current="current" @selected="selectedListener" />
   </div>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
-import TrainingLabelItem from './TrainingLabelItem'
+import { defineComponent, ref } from '@nuxtjs/composition-api'
+import RunTrainingLabel from './RunTrainingLabel'
+import MachineTrainingLabel from './MachineTrainingLabel'
+import StretchTrainingLabel from './StretchTrainingLabel'
+import WeightTrainingLabel from './WeightTrainingLabel'
+
 export default defineComponent({
-  data() {
-    return {
-      activeIdx: 1,
-    }
-  },
   components: {
-    TrainingLabelItem,
+    RunTrainingLabel,
+    MachineTrainingLabel,
+    StretchTrainingLabel,
+    WeightTrainingLabel,
+  },
+  setup(props, ctx) {
+    const current = ref('run')
+
+    function selectedListener(val) {
+      current.value = val
+      ctx.emit('current', val)
+    }
+
+    return {
+      current,
+      selectedListener,
+    }
   },
 })
 </script>

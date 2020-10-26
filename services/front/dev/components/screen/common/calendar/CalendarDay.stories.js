@@ -1,7 +1,7 @@
 import CalendarDay from './CalendarDay.vue'
 
 export default {
-  title: 'screen.common.calendar.CalendarDay',
+  title: 'screen/common/calendar/CalendarDay',
   component: CalendarDay,
 }
 

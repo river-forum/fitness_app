@@ -1,7 +1,7 @@
 import Calendar from './Calendar.vue'
 
 export default {
-  title: 'screen.common.calendar.Calendar',
+  title: 'screen/common/calendar/Calendar',
   component: Calendar,
 }
 
