@@ -12,7 +12,7 @@
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "@types/google-apps-script": "1.0.17",
-    "@types/lodash": "4.14.162",
+    "@types/lodash": "4.14.163",
     "husky": "4.3.0",
     "prettier": "2.1.2",
     "pretty-quick": "3.1.0"
