@@ -34,7 +34,7 @@
     "moment": "2.29.1",
     "node-sass": "5.0.0",
     "nuxt": "2.14.7",
-    "sass-loader": "10.0.4",
+    "sass-loader": "10.0.5",
     "vuejs-datepicker": "1.6.2"
   },
   "devDependencies": {
