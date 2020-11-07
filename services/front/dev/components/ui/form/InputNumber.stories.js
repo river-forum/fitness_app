@@ -11,5 +11,6 @@ export const HowToUse = () => ({
   <InputNumber currentType="weight" />
   <InputNumber currentType="distance" />
   <InputNumber currentType="set" />
+  <InputNumber currentType="times" />
   </div>`,
 })

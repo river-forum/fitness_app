@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between w-full pb-1 text-3xl border-b border-solid">
+  <div class="flex justify-between w-full pb-1 text-2xl border-b border-solid">
     <div class="date-text">
       <p class="text">日付</p>
     </div>

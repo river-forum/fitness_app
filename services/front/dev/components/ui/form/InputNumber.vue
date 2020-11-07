@@ -1,11 +1,15 @@
 <template>
   <div class="flex items-center justify-between pb-4 border-b-2 form-wrap">
-    <p class="text-3xl form-wrap__title">
+    <p class="text-2xl form-wrap__title">
       {{ value.title }}
     </p>
     <div class="flex items-center form-wrap__content">
-      <input class="input" type="number" />
-      <div class="pl-4 text-3xl unit">
+      <input
+        class="text-2xl text-right input"
+        type="number"
+        placeholder="---"
+      />
+      <div class="pl-4 text-2xl unit">
         {{ value.unit }}
       </div>
     </div>
