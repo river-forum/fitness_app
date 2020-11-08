@@ -1,27 +1,27 @@
 <template>
-  <div class="calendar max-w-md">
-    <div class="calendar__wrap p-4 pb-0 bg-green-500 relative">
-      <div class="ymd absolute right-0 top-0">
-        <ul class="ymd__contents flex">
-          <li class="ymd__li opacity-75">
+  <div class="max-w-md calendar">
+    <div class="relative p-4 pb-0 bg-green-500 calendar__wrap">
+      <div class="absolute top-0 right-0 ymd">
+        <ul class="flex ymd__contents">
+          <li class="opacity-75 ymd__li">
             <button
-              class="py-1 px-4 bg-black text-white font-bold"
+              class="px-4 py-1 font-bold text-white bg-black"
               @click="changeEventListener('d')"
             >
               D
             </button>
           </li>
-          <li class="ymd__li opacity-75">
+          <li class="opacity-75 ymd__li">
             <button
-              class="py-1 px-4 bg-black text-white font-bold"
+              class="px-4 py-1 font-bold text-white bg-black"
               @click="changeEventListener('w')"
             >
               W
             </button>
           </li>
-          <li class="ymd__li opacity-75">
+          <li class="opacity-75 ymd__li">
             <button
-              class="py-1 px-4 bg-black text-white font-bold"
+              class="px-4 py-1 font-bold text-white bg-black"
               @click="changeEventListener('m')"
             >
               M
@@ -29,7 +29,7 @@
           </li>
         </ul>
       </div>
-      <div class="date text-white">
+      <div class="text-white date">
         <component :is="currentComponent" />
       </div>
     </div>

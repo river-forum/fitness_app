@@ -1,7 +1,7 @@
 import Button from './Button.vue'
 
 export default {
-  title: 'screen.ui.Button',
+  title: 'ui/button/Button',
   component: Button,
 }
 

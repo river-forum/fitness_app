@@ -1,7 +1,7 @@
 import InputNumber from './InputNumber.vue'
 
 export default {
-  title: 'ui.form.InputNumber',
+  title: 'ui/form/InputNumber',
   component: InputNumber,
 }
 

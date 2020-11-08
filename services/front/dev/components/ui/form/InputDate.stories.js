@@ -1,7 +1,7 @@
 import InputDate from './InputDate.vue'
 
 export default {
-  title: 'ui.form.InputDate',
+  title: 'ui/form/InputDate',
   component: InputDate,
 }
 

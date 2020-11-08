@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between pb-4 border-b-2 form-wrap">
+  <div class="flex items-center justify-between pb-4 border-b form-wrap">
     <p class="text-2xl form-wrap__title">
       {{ value.title }}
     </p>
