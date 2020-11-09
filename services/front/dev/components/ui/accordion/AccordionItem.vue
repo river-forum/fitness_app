@@ -1,37 +1,40 @@
 <template>
-  <div class="js-accordion">
-    <button
-      type="button"
-      class="js-accordion--trigger"
-      :class="{ '_state-open': isOpened }"
-      @click="accordionToggle()"
-    >
-      {{ accordionTitle }}
-    </button>
-    <transition
-      name="js-accordion"
-      @before-enter="accAnimationFn.beforeEnter"
-      @enter="accAnimationFn.enter"
-      @before-leave="accAnimationFn.beforeLeave"
-      @leave="accAnimationFn.leave"
-    >
-      <div
-        v-if="isOpened"
-        class="js-accordion--target"
+  <div class="test">
+    <div v-for="data in MasterData" :key="data.id" class="js-accordion">
+      <button
+        type="button"
+        class="js-accordion--trigger"
         :class="{ '_state-open': isOpened }"
+        @click="accordionToggle()"
       >
-        <div class="js-accordion--body">
-          <p>アコーディオン1の中身</p>
-          <p>アコーディオン1の中身</p>
-          <p>アコーディオン1の中身</p>
+        {{ accordionTitle }}
+      </button>
+      <transition
+        name="js-accordion"
+        @before-enter="accAnimationFn.beforeEnter"
+        @enter="accAnimationFn.enter"
+        @before-leave="accAnimationFn.beforeLeave"
+        @leave="accAnimationFn.leave"
+      >
+        <div
+          v-if="isOpened"
+          class="js-accordion--target"
+          :class="{ '_state-open': isOpened }"
+        >
+          <div class="js-accordion--body">
+            <p>アコーディオン1の中身</p>
+            <p>アコーディオン1の中身</p>
+            <p>アコーディオン1の中身</p>
+          </div>
         </div>
-      </div>
-    </transition>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
 import { defineComponent, ref } from '@nuxtjs/composition-api'
+import MasterData from '@/data/master'
 
 export default defineComponent({
   props: {
@@ -62,6 +65,7 @@ export default defineComponent({
     }
 
     return {
+      MasterData,
       isOpened,
       accordionToggle,
       accAnimationFn,
