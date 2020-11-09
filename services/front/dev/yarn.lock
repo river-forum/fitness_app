@@ -2203,13 +2203,13 @@
     consola "^2.15.0"
     defu "^3.1.0"
 
-"@nuxtjs/composition-api@0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.14.0.tgz#50c30bec9f5e1197d0a7a06bea18d6f9c9a6dd2c"
-  integrity sha512-EdiHy9xpoFs2UuZcooQszCK3ojiZTB9ys/0rDUdupRC4IvbS7Q3b0+LMVisgGvL+O1L0FAQSjyxQTss98KrjQw==
+"@nuxtjs/composition-api@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.15.0.tgz#9ad4afcfdf354638110c0eb02b9ffb842dbe6ec9"
+  integrity sha512-mPouA4NshHehqOmMIM4XzsaBYiYN6GBaxAbPSh2c6jnO3cdVJiv9s8oVfvZHQmGyhAknTpW/L5rMy8lRHjNaig==
   dependencies:
     "@vue/composition-api" "1.0.0-beta.19"
-    defu "^3.1.0"
+    defu "^3.2.1"
     normalize-path "^3.0.0"
 
 "@nuxtjs/eslint-config@4.0.0":
@@ -6228,6 +6228,11 @@ defu@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/defu/-/defu-3.1.0.tgz#a6b5104cacc06aa1efa01923becddbedd32505e8"
   integrity sha512-pc7vS4wbYFtsRL+OaLHKD72VcpOz9eYgzZeoLz9pCs+R8htyPdZnD1CxKP9ttZuT90CLPYFTSaTyc3/7v4gG9A==
+
+defu@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/defu/-/defu-3.2.1.tgz#3a6457796c7e0c21d3420fec402a8d1297812655"
+  integrity sha512-M/K9dtFywZG/fzMmQoJLxcR7viJNMklKnF8eu8k+mZLr+DCWLxq3cXEpehG2498llRYypDbkLrrMH/DK2xYW6g==
 
 delayed-stream@~1.0.0:
   version "1.0.0"
