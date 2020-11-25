@@ -3016,10 +3016,10 @@
     consola "^2.15.0"
     defu "^3.1.0"
 
-"@nuxtjs/composition-api@0.16.3":
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.16.3.tgz#04252c6eeaf6099114c0be028bef8a058727a0d2"
-  integrity sha512-c2MNeZ4/UrPA6HMQVMbRkzwL28In0yVNkOtV0Ed+9fIb+gsVdFFLKZc+aQtTWynH5O4PFs+0idKwWsnh6wOmLA==
+"@nuxtjs/composition-api@0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.16.4.tgz#8f0aa7c9378b262fed71ad9fc46f87f1ef0e2a6f"
+  integrity sha512-L+r6WBYNI9/LokmCXMJQqpvff0aeghpT9Qi1zlUWpUwkVyym/HUV8thfENL0SzrswJrjT0XXrqfiyTH0uPs3gA==
   dependencies:
     "@vue/composition-api" "1.0.0-beta.20"
     defu "^3.2.2"
