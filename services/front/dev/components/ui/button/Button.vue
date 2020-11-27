@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex items-center justify-center w-40 p-6 text-2xl border button"
+    class="flex items-center justify-center w-full p-6 text-2xl border button"
   >
     {{ buttonInnerText }}
   </button>
@@ -22,8 +22,6 @@ export default defineComponent({
 .button {
   $default-color: #489fa6;
 
-  max-width: 28rem;
-  width: 100%;
   height: 6rem;
   border-radius: 5rem;
   border-color: $default-color;

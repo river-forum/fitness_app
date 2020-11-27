@@ -1,92 +1,110 @@
-export const PART = [
+export default [
   {
     id: 1,
     name: 'ショルダープレス',
     type: 'shoulder',
+    partsName: '肩',
   },
   {
     id: 2,
     name: 'トライセプスキックバック',
     type: 'arm',
+    partsName: '腕',
   },
   {
     id: 4,
     name: 'チンアップ',
     type: 'arm',
+    partsName: '腕',
   },
   {
     id: 5,
     name: 'ダンベルカール',
     type: 'arm',
+    partsName: '腕',
   },
   {
     id: 6,
     name: '腕立て伏せ',
     type: 'breast',
+    partsName: '胸',
   },
   {
     id: 7,
     name: 'チェストプレス',
     type: 'breast',
+    partsName: '胸',
   },
   {
     id: 8,
     name: 'ベンチプレス',
     type: 'breast',
+    partsName: '胸',
   },
   {
     id: 9,
     name: 'アドミナルクランチ',
     type: 'abdominal',
+    partsName: 'お腹',
   },
   {
     id: 10,
     name: 'ラッドプルダウン',
     type: 'back',
+    partsName: '背中',
   },
   {
     id: 11,
     name: 'シーテッドロウ',
     type: 'back',
+    partsName: '背中',
   },
   {
     id: 12,
     name: 'バックエクステンション',
     type: 'back',
+    partsName: '背中',
   },
   {
     id: 13,
     name: 'バイシクルクランチ',
     type: 'waist',
+    partsName: '腰',
   },
   {
     id: 14,
     name: 'スクワット',
     type: 'waist',
+    partsName: '腰',
   },
   {
     id: 15,
     name: 'レッグプレス',
     type: 'legs',
+    partsName: '脚',
   },
   {
     id: 16,
     name: 'レッグエクステンション',
     type: 'legs',
+    partsName: '脚',
   },
   {
     id: 17,
     name: 'アダクター',
     type: 'legs',
+    partsName: '脚',
   },
   {
     id: 18,
     name: 'レッグカール',
     type: 'legs',
+    partsName: '脚',
   },
   {
     id: 19,
     name: 'アブダクター',
     type: 'legs',
+    partsName: '脚',
   },
 ]

@@ -1,6 +1,6 @@
 <template>
   <div class="test">
-    <div v-for="data in MasterData" :key="data.id" class="js-accordion">
+    <div class="js-accordion">
       <button
         type="button"
         class="js-accordion--trigger"
@@ -13,6 +13,7 @@
         name="js-accordion"
         @before-enter="accAnimationFn.beforeEnter"
         @enter="accAnimationFn.enter"
+        @after-enter="accAnimationFn.afterEnter"
         @before-leave="accAnimationFn.beforeLeave"
         @leave="accAnimationFn.leave"
       >
@@ -22,9 +23,9 @@
           :class="{ '_state-open': isOpened }"
         >
           <div class="js-accordion--body">
-            <p>アコーディオン1の中身</p>
-            <p>アコーディオン1の中身</p>
-            <p>アコーディオン1の中身</p>
+            <p v-for="parts in partsArr" :key="parts.id">
+              {{ parts.name }}
+            </p>
           </div>
         </div>
       </transition>
@@ -34,7 +35,6 @@
 
 <script>
 import { defineComponent, ref } from '@nuxtjs/composition-api'
-import MasterData from '@/data/master'
 
 export default defineComponent({
   props: {
@@ -42,8 +42,12 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    arrEachPart: {
+      type: Array,
+      required: true,
+    },
   },
-  setup() {
+  setup(props) {
     const isOpened = ref(false)
     function accordionToggle() {
       isOpened.value = !isOpened.value
@@ -56,6 +60,9 @@ export default defineComponent({
       enter(el) {
         el.style.height = el.scrollHeight + 'px'
       },
+      afterEnter(el) {
+        el.style.height = 'auto'
+      },
       beforeLeave(el) {
         el.style.height = el.scrollHeight + 'px'
       },
@@ -64,11 +71,13 @@ export default defineComponent({
       },
     }
 
+    const partsArr = props.arrEachPart
+
     return {
-      MasterData,
       isOpened,
       accordionToggle,
       accAnimationFn,
+      partsArr,
     }
   },
 })
@@ -135,6 +144,7 @@ export default defineComponent({
   }
   &--body {
     padding: 30px;
+    will-change: height;
   }
   &-enter-active {
     animation-duration: 1s;

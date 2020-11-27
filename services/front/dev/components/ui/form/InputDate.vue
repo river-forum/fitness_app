@@ -3,7 +3,7 @@
     <div class="date-text">
       <p class="text">日付</p>
     </div>
-    <Datepicker class="date-input" :format="dateFormat" />
+    <Datepicker class="text-right date-input" :format="dateFormat" />
   </div>
 </template>
 
@@ -29,13 +29,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-// .date-input {
-//   input {
-//     text-align: right;
-//     &:focus {
-//       outline: 0;
-//     }
-//   }
-// }
-//
+.date-input {
+  input {
+    text-align: right;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
 </style>

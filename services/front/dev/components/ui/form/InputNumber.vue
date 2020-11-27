@@ -20,14 +20,14 @@
 import { defineComponent, computed } from '@nuxtjs/composition-api'
 export default defineComponent({
   props: {
-    currentType: {
+    type: {
       type: String,
       required: true,
     },
   },
   setup(props) {
     const currentComponent = computed(() => {
-      switch (props.currentType) {
+      switch (props.type) {
         case 'weight':
           return {
             title: '重さ',

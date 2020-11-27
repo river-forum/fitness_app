@@ -12,8 +12,7 @@ export const HowToUse = () => ({
       selected: 'Run',
     }
   },
-  template: `<div>
-  {{ selected }}<trainingLabelWrap class="m-10" @current="currentListener"/>
+  template: `<div style="width: 37.5rem"><trainingLabelWrap class="m-10" @current="currentListener"/>
   </div>`,
   methods: {
     currentListener(val) {
