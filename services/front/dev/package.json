@@ -33,7 +33,7 @@
     "lodash": "4.17.20",
     "moment": "2.29.1",
     "node-sass": "5.0.0",
-    "nuxt": "2.14.7",
+    "nuxt": "2.14.8",
     "sass-loader": "10.1.0",
     "vuejs-datepicker": "1.6.2"
   },
