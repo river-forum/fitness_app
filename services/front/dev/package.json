@@ -29,7 +29,7 @@
     "@nuxtjs/axios": "5.12.3",
     "@nuxtjs/composition-api": "0.16.4",
     "@nuxtjs/pwa": "3.3.2",
-    "core-js": "3.8.0",
+    "core-js": "3.8.1",
     "lodash": "4.17.20",
     "moment": "2.29.1",
     "node-sass": "5.0.0",
