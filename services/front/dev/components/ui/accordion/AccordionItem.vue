@@ -1,35 +1,38 @@
 <template>
-  <div class="test">
-    <div class="js-accordion">
-      <button
-        type="button"
-        class="js-accordion--trigger"
+  <div class="px-6 accordion">
+    <button
+      type="button"
+      class="px-2 py-4 text-left accordion__trigger"
+      :class="{ '_state-open': isOpened }"
+      @click="accordionToggle()"
+    >
+      {{ accordionTitle }}
+    </button>
+    <transition
+      name="js-accordion"
+      @before-enter="accAnimationFn.beforeEnter"
+      @enter="accAnimationFn.enter"
+      @after-enter="accAnimationFn.afterEnter"
+      @before-leave="accAnimationFn.beforeLeave"
+      @leave="accAnimationFn.leave"
+    >
+      <div
+        v-if="isOpened"
+        class="accordion__target"
         :class="{ '_state-open': isOpened }"
-        @click="accordionToggle()"
       >
-        {{ accordionTitle }}
-      </button>
-      <transition
-        name="js-accordion"
-        @before-enter="accAnimationFn.beforeEnter"
-        @enter="accAnimationFn.enter"
-        @after-enter="accAnimationFn.afterEnter"
-        @before-leave="accAnimationFn.beforeLeave"
-        @leave="accAnimationFn.leave"
-      >
-        <div
-          v-if="isOpened"
-          class="js-accordion--target"
-          :class="{ '_state-open': isOpened }"
-        >
-          <div class="js-accordion--body">
-            <p v-for="parts in partsArr" :key="parts.id">
+        <ul class="accordion__body">
+          <li v-for="parts in partsArr" :key="parts.id">
+            <button class="relative w-full py-4 text-left accordion__machine">
+              <span
+                class="absolute top-0 bottom-0 right-0 w-8 h-8 m-auto bg-teal-300 rounded-full circle"
+              ></span>
               {{ parts.name }}
-            </p>
-          </div>
-        </div>
-      </transition>
-    </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -84,79 +87,88 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.js-accordion {
-  background-color: #fff;
-  border-color: #666;
-  border-style: solid;
-  border-width: 1px 1px 0 1px;
-  border-radius: 2px;
-
-  &:last-child {
-    border-bottom-width: 1px;
-  }
-  &--trigger {
+.accordion {
+  &__trigger {
     position: relative;
     display: block;
     width: 100%;
     transition: all 0.2s ease-in;
-    color: #4d68b7;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    padding: 20px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(#333, 0.2);
 
     &::after {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border: solid transparent;
-      content: '';
-      border-top-color: #5f6569;
-      border-width: 7px;
       position: absolute;
-      top: 50%;
-      right: 1em;
-      margin-top: -5px;
-      transition: all 0.2s ease-in;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      border-right: 1px solid rgba(#333, 0.2);
+      border-bottom: 1px solid rgba(#333, 0.2);
+      transform: rotate(45deg);
+      transition: 0.4s ease-in-out;
     }
 
     &._state-open {
-      background-color: #f1f1f1;
-      text-decoration: none;
-
       &::after {
-        transform: rotateX(180deg);
-        margin-top: -10px;
+        transform: rotate(-135deg);
       }
-    }
-    &:hover {
-      background-color: #f1f1f1;
-      text-decoration: none;
     }
   }
 
-  &--target {
+  &__target {
     overflow: hidden;
     transition: height 0.4s ease-in-out;
   }
-  &--body {
-    padding: 30px;
+
+  &__body {
     will-change: height;
   }
+
   &-enter-active {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: js-accordion--anime__opend;
   }
+
   &-leave-active {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: js-accordion--anime__closed;
   }
+
+  &__machine {
+    color: #4d68b7;
+  }
 }
+
+.circle {
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 @keyframes js-accordion--anime__opend {
   0% {
     opacity: 0;
