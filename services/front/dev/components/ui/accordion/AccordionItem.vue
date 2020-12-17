@@ -23,7 +23,7 @@
       >
         <ul class="accordion__body">
           <li v-for="parts in partsArr" :key="parts.id">
-            <button class="relative w-full py-4 text-left accordion__machine">
+            <button class="relative w-full py-4 text-left accordion__button">
               <span
                 class="absolute top-0 bottom-0 right-0 w-8 h-8 m-auto bg-teal-300 rounded-full circle"
               ></span>
