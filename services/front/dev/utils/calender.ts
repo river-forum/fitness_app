@@ -11,10 +11,14 @@ import moment from 'moment'
  * @param dateFormat
  * @returns {[]}
  */
-export const getDatesDiff = (startDate, endDate, dateFormat = 'YYYY-MM-DD') => {
+export const getDatesDiff = (
+  startDate: any,
+  endDate: any,
+  dateFormat: string = 'YYYY-MM-DD'
+) => {
   // startDate 2ヶ月前 endDate 今現在 //
 
-  const getDateAsArray = (date) => {
+  const getDateAsArray = (date: string) => {
     return moment(date.split(/\D+/), dateFormat)
   }
 

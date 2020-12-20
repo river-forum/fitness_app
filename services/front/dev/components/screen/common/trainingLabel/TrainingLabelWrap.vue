@@ -32,6 +32,7 @@ export default defineComponent({
     StretchTrainingInner,
     WeightTrainingInner,
   },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   setup(props, ctx) {
     const current = ref('run')
 
