@@ -4,8 +4,9 @@
   </div>
 </template>
 
-<script>
-import Footer from '@/components/screen/common/footer/Footer'
+<script lang="ts">
+import Footer from '@/components/screen/common/footer/Footer.vue'
+
 export default {
   components: {
     Footer,

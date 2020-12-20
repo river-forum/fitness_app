@@ -1,37 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Calendar Component renders correctly 1`] = `
-"<div class=\\"calendar max-w-md\\">
-  <div class=\\"calendar__wrap p-4 pb-0 bg-green-500 relative\\">
-    <div class=\\"ymd absolute right-0 top-0\\">
-      <ul class=\\"ymd__contents flex\\">
-        <li class=\\"ymd__li opacity-75\\"><button class=\\"py-1 px-4 bg-black text-white font-bold\\">
+"<div class=\\"max-w-md calendar\\">
+  <div class=\\"relative p-4 pb-0 bg-green-500 calendar__wrap\\">
+    <div class=\\"absolute top-0 right-0 ymd\\">
+      <ul class=\\"flex ymd__contents\\">
+        <li class=\\"opacity-75 ymd__li\\"><button class=\\"px-4 py-1 font-bold text-white bg-black\\">
             D
           </button></li>
-        <li class=\\"ymd__li opacity-75\\"><button class=\\"py-1 px-4 bg-black text-white font-bold\\">
+        <li class=\\"opacity-75 ymd__li\\"><button class=\\"px-4 py-1 font-bold text-white bg-black\\">
             W
           </button></li>
-        <li class=\\"ymd__li opacity-75\\"><button class=\\"py-1 px-4 bg-black text-white font-bold\\">
+        <li class=\\"opacity-75 ymd__li\\"><button class=\\"px-4 py-1 font-bold text-white bg-black\\">
             M
           </button></li>
       </ul>
     </div>
-    <div class=\\"date text-white\\">
+    <div class=\\"text-white date\\">
       <div>
         <div class=\\"date__current-month font-bold\\">
 
         </div>
         <ul class=\\"date__day flex overflow-scroll\\">
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">24</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">25</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">26</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">27</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">28</span> <br><span class=\\"day__of-week\\">金</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">29</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">30</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">31</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn is-active\\"><span class=\\"day__num\\">1</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">24</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">25</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">26</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">27</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">28</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">29</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">30</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">31</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">1</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">2</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">3</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">4</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">5</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">6</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">7</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">8</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">9</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">10</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">11</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">12</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">13</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">14</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">15</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">16</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">17</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">18</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">19</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">24</span> <br><span class=\\"day__of-week\\">火</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">25</span> <br><span class=\\"day__of-week\\">水</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">26</span> <br><span class=\\"day__of-week\\">木</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">27</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">28</span> <br><span class=\\"day__of-week\\">土</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">29</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">30</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">1</span> <br><span class=\\"day__of-week\\">火</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">2</span> <br><span class=\\"day__of-week\\">水</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">3</span> <br><span class=\\"day__of-week\\">木</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">4</span> <br><span class=\\"day__of-week\\">金</span></button></li>
@@ -50,40 +83,7 @@ exports[`Calendar Component renders correctly 1`] = `
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">17</span> <br><span class=\\"day__of-week\\">木</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">18</span> <br><span class=\\"day__of-week\\">金</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">19</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn is-active\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">24</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">25</span> <br><span class=\\"day__of-week\\">金</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">26</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">27</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">28</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">29</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">30</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn is-active\\"><span class=\\"day__num\\">1</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">2</span> <br><span class=\\"day__of-week\\">金</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">3</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">4</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">5</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">6</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">7</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">8</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">9</span> <br><span class=\\"day__of-week\\">金</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn is-active\\"><span class=\\"day__num\\">10</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">11</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">12</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">13</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">14</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">15</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">16</span> <br><span class=\\"day__of-week\\">金</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">17</span> <br><span class=\\"day__of-week\\">土</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">18</span> <br><span class=\\"day__of-week\\">日</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">19</span> <br><span class=\\"day__of-week\\">月</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">水</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">木</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">金</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">日</span></button></li>
         </ul>
       </div>
     </div>
