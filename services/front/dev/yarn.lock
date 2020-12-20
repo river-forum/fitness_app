@@ -1811,7 +1811,7 @@
     rc9 "^1.2.0"
     std-env "^2.2.1"
 
-"@nuxt/types@^2.14.12":
+"@nuxt/types@2.14.12":
   version "2.14.12"
   resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-2.14.12.tgz#4e5aa642b67081890b3b7aab03db62855ef71a25"
   integrity sha512-x58uEVygHual/kHDTrLAwXjKNYn+5udR4HJOmHd2gXgYonZu8E2UpsShIkyMRZ0nRoEAZ72i4OfcHKqGsVSI6w==
@@ -1835,7 +1835,7 @@
     "@types/webpack-dev-middleware" "^3.7.2"
     "@types/webpack-hot-middleware" "^2.25.3"
 
-"@nuxt/typescript-build@^2.0.3":
+"@nuxt/typescript-build@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@nuxt/typescript-build/-/typescript-build-2.0.3.tgz#338094f1bbadc21a59942c0aa0e272dff5a3f6a8"
   integrity sha512-iqxUV6sv86sat9VIlJyjL38oP+OkLg+gOr7uvYYRcYYGL6h/1OSWWIawyVsc4/RX9UGOy3JNj+BcvEo/7SkAUA==
@@ -1845,7 +1845,7 @@
     ts-loader "^8.0.3"
     typescript "~4.0"
 
-"@nuxt/typescript-runtime@^2.0.0":
+"@nuxt/typescript-runtime@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nuxt/typescript-runtime/-/typescript-runtime-2.0.0.tgz#57b1f0aeabe49c7548fa412b7ffd46ae424afefa"
   integrity sha512-jF//aTclzhdaExENtLbWFpBAGcg9Aj0V4rEWnNGTdWfqurMMdzC96U+oa8UJIMMZgTp9MW3vaqbKuzTq8btz/A==
@@ -1972,7 +1972,7 @@
     defu "^3.2.2"
     normalize-path "^3.0.0"
 
-"@nuxtjs/eslint-config-typescript@^5.0.0":
+"@nuxtjs/eslint-config-typescript@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/eslint-config-typescript/-/eslint-config-typescript-5.0.0.tgz#060c1402e559b1df78c8c19b2f5a873eac53cab2"
   integrity sha512-jw6h/WsdPc5i5l+a3DmEdpoAbFE4Tt7X6DBdXY7gfAsZ6bfzjoMzoHYaAmUk2tWkRDZmYvP6YANkbvi3X3pPAg==
@@ -2906,7 +2906,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/moment@^2.13.0":
+"@types/moment@2.13.0":
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
   integrity sha1-YE69GJvDvDShVIaJQE5hoqSqyJY=
