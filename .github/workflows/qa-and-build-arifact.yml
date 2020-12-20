@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - develop
+      - fix/gh-action
   pull_request:
     branches:
       - develop
@@ -39,7 +40,7 @@ jobs:
       - name: cache workspace
         uses: actions/cache@v2
         with:
-          path: ${{ github.workspace }}
+          path: ./services/front/dev/node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
 
   lint:
@@ -61,7 +62,7 @@ jobs:
       - name: restore workspace cache
         uses: actions/cache@v2
         with:
-          path: ${{ github.workspace }}
+          path: ./services/front/dev/node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
 
       - name: lint
@@ -89,7 +90,7 @@ jobs:
       - name: restore workspace cache
         uses: actions/cache@v2
         with:
-          path: ${{ github.workspace }}
+          path: ./services/front/dev/node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-app-${{ github.sha }}
 
       - name: test
