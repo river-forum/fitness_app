@@ -8,6 +8,6 @@ export default {
 
 export const HowToUse = () => ({
   components: { MachineCard },
-  template: `<div class="inner-wrap" style="width: 37.5rem">
+  template: `<div class="inner-wrap relative" style="width: 37.5rem">
   <MachineCard class="m-10"/></div>`,
 })

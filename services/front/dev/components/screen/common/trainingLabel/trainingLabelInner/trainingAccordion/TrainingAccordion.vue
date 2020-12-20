@@ -23,12 +23,20 @@
       >
         <ul class="accordion__body">
           <li v-for="parts in partsArr" :key="parts.id">
-            <button class="relative w-full py-4 text-left accordion__button">
+            <button
+              class="relative w-full py-4 text-left accordion__button"
+              @click="machineCardToggle()"
+            >
               <span
                 class="absolute top-0 bottom-0 right-0 w-8 h-8 m-auto bg-teal-300 rounded-full circle"
               ></span>
               {{ parts.name }}
             </button>
+            <MachineCard
+              :machine-name="parts.name"
+              :class="{ 'is-active': isActive }"
+              @changeActiveValue="changeActiveValue"
+            />
           </li>
         </ul>
       </div>
@@ -38,8 +46,12 @@
 
 <script>
 import { defineComponent, ref } from '@nuxtjs/composition-api'
+import MachineCard from '../../../../common/trainingLabel/trainingLabelInner/machineCard/MachineCard'
 
 export default defineComponent({
+  components: {
+    MachineCard,
+  },
   props: {
     accordionTitle: {
       type: String,
@@ -52,8 +64,17 @@ export default defineComponent({
   },
   setup(props) {
     const isOpened = ref(false)
+    const isActive = ref(false)
     function accordionToggle() {
       isOpened.value = !isOpened.value
+    }
+
+    function changeActiveValue() {
+      isActive.value = !isActive.value
+    }
+
+    function machineCardToggle() {
+      isActive.value = !isActive.value
     }
 
     const accAnimationFn = {
@@ -79,6 +100,9 @@ export default defineComponent({
     return {
       isOpened,
       accordionToggle,
+      machineCardToggle,
+      isActive,
+      changeActiveValue,
       accAnimationFn,
       partsArr,
     }
@@ -166,6 +190,19 @@ export default defineComponent({
 button {
   &:focus {
     outline: none;
+  }
+}
+
+.machine-card {
+  position: absolute;
+  bottom: -100vh;
+  right: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s ease;
+
+  &.is-active {
+    bottom: 0;
   }
 }
 

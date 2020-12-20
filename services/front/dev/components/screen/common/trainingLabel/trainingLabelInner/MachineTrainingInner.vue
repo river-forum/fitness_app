@@ -2,19 +2,34 @@
   <div class="test">
     <InputDate />
     <div class="mt-20 accordion-wrapper">
-      <AccordionItem accordion-title="肩" :arr-each-part="arrEachPart('肩')" />
-      <AccordionItem accordion-title="腕" :arr-each-part="arrEachPart('腕')" />
-      <AccordionItem accordion-title="胸" :arr-each-part="arrEachPart('胸')" />
-      <AccordionItem
+      <TrainingAccordion
+        accordion-title="肩"
+        :arr-each-part="arrEachPart('肩')"
+      />
+      <TrainingAccordion
+        accordion-title="腕"
+        :arr-each-part="arrEachPart('腕')"
+      />
+      <TrainingAccordion
+        accordion-title="胸"
+        :arr-each-part="arrEachPart('胸')"
+      />
+      <TrainingAccordion
         accordion-title="お腹"
         :arr-each-part="arrEachPart('お腹')"
       />
-      <AccordionItem
+      <TrainingAccordion
         accordion-title="背中"
         :arr-each-part="arrEachPart('背中')"
       />
-      <AccordionItem accordion-title="腰" :arr-each-part="arrEachPart('腰')" />
-      <AccordionItem accordion-title="脚" :arr-each-part="arrEachPart('脚')" />
+      <TrainingAccordion
+        accordion-title="腰"
+        :arr-each-part="arrEachPart('腰')"
+      />
+      <TrainingAccordion
+        accordion-title="脚"
+        :arr-each-part="arrEachPart('脚')"
+      />
     </div>
   </div>
 </template>
@@ -23,12 +38,12 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import MasterData from '@/data/master'
 import InputDate from '../../../../ui/form/InputDate.vue'
-import AccordionItem from '../../../../ui/accordion/AccordionItem.vue'
+import TrainingAccordion from '../../../common/trainingLabel/trainingLabelInner/trainingAccordion/TrainingAccordion'
 
 export default defineComponent({
   components: {
     InputDate,
-    AccordionItem,
+    TrainingAccordion,
   },
   setup() {
     function arrEachPart(name) {

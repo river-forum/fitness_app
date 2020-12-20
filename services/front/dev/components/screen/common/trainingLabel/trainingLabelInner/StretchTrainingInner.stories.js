@@ -7,6 +7,6 @@ export default {
 
 export const HowToUse = () => ({
   components: { StretchTrainingInner },
-  template: `<div class="inner-wrap" style="width: 37.5rem">
+  template: `<div class="inner-wrap relative" style="width: 37.5rem">
   <StretchTrainingInner class="m-10"/></div>`,
 })
