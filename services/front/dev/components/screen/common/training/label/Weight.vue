@@ -1,21 +1,21 @@
 <template>
-  <TrainingLabelItem
+  <Frame
     current-color="#f6dd72"
     :active="active"
     @click.native="selectedListener"
   >
     <template slot="contents">Weight</template>
-  </TrainingLabelItem>
+  </Frame>
 </template>
 <script>
 import { defineComponent, computed } from '@nuxtjs/composition-api'
-import TrainingLabelItem from './TrainingLabelItem.vue'
+import Frame from './_Frame'
 
 const IDENTIFY = 'weight'
 
 export default defineComponent({
   components: {
-    TrainingLabelItem,
+    Frame,
   },
   props: {
     current: {

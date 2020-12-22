@@ -32,7 +32,7 @@
               ></span>
               {{ parts.name }}
             </button>
-            <MachineCard
+            <Card
               :machine-name="parts.name"
               :class="{ 'is-active': isActive }"
               @changeActiveValue="changeActiveValue"
@@ -46,11 +46,11 @@
 
 <script>
 import { defineComponent, ref } from '@nuxtjs/composition-api'
-import MachineCard from '../../../../common/trainingLabel/trainingLabelInner/machineCard/MachineCard'
+import Card from './Card'
 
 export default defineComponent({
   components: {
-    MachineCard,
+    Card,
   },
   props: {
     accordionTitle: {

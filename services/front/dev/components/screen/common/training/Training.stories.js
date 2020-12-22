@@ -1,18 +1,18 @@
-import trainingLabelWrap from './TrainingLabelWrap.vue'
+import Training from './Training.vue'
 
 export default {
-  title: 'screen/common/trainingLabel/trainingLabelWrap',
-  component: trainingLabelWrap,
+  title: 'screen/common/training/Training.vue',
+  component: Training,
 }
 
 export const HowToUse = () => ({
-  components: { trainingLabelWrap },
+  components: { Training },
   data() {
     return {
       selected: 'Run',
     }
   },
-  template: `<div style="width: 37.5rem"><trainingLabelWrap class="m-10 relative" @current="currentListener"/>
+  template: `<div style="width: 37.5rem"><Training class="m-10 relative" @current="currentListener"/>
   </div>`,
   methods: {
     currentListener(val) {

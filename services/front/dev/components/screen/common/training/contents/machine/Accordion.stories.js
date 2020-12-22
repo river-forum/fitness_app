@@ -1,10 +1,9 @@
 import MasterData from '@/data/master'
-import TrainingAccordion from './TrainingAccordion.vue'
+import Accordion from './Accordion.vue'
 
 export default {
-  title:
-    'screen/common/trainingLabel/trainingLabelInner/trainingAccordion/TrainingAccordion',
-  component: TrainingAccordion,
+  title: 'screen/common/training/contents/machine/Accordion.vue',
+  component: Accordion,
 }
 
 export const HowToUse = () => ({
@@ -13,8 +12,8 @@ export const HowToUse = () => ({
       MasterData,
     }
   },
-  components: { TrainingAccordion },
+  components: { Accordion },
   template: `<div class="m-10">
-  <TrainingAccordion v-for="data in MasterData" :key="data.id" />
+  <Accordion v-for="data in MasterData" :key="data.id" />
   </div>`,
 })

@@ -1,10 +1,10 @@
 <template>
   <div class="label-wrapper">
     <div class="flex">
-      <RunTrainingLabel :current="current" @selected="selectedListener" />
-      <MachineTrainingLabel :current="current" @selected="selectedListener" />
-      <StretchTrainingLabel :current="current" @selected="selectedListener" />
-      <WeightTrainingLabel :current="current" @selected="selectedListener" />
+      <RunLabel :current="current" @selected="selectedListener" />
+      <MachineLabel :current="current" @selected="selectedListener" />
+      <StretchLabel :current="current" @selected="selectedListener" />
+      <WeightLabel :current="current" @selected="selectedListener" />
     </div>
     <component :is="currentComponent" class="mt-10" />
   </div>
@@ -12,25 +12,25 @@
 
 <script>
 import { defineComponent, ref, computed } from '@nuxtjs/composition-api'
-import RunTrainingLabel from './RunTrainingLabel'
-import MachineTrainingLabel from './MachineTrainingLabel'
-import StretchTrainingLabel from './StretchTrainingLabel'
-import WeightTrainingLabel from './WeightTrainingLabel'
-import RunTrainingInner from './trainingLabelInner/RunTrainingInner'
-import MachineTrainingInner from './trainingLabelInner/MachineTrainingInner'
-import StretchTrainingInner from './trainingLabelInner/StretchTrainingInner'
-import WeightTrainingInner from './trainingLabelInner/WeightTrainingInner'
+import RunLabel from './label/Run'
+import MachineLabel from './label/Machine'
+import StretchLabel from './label/Stretch'
+import WeightLabel from './label/Weight'
+import RunInner from './contents/Run'
+import MachineInner from './contents/Machine'
+import StretchInner from './contents/Stretch'
+import WeightInner from './contents/Weight'
 
 export default defineComponent({
   components: {
-    RunTrainingLabel,
-    MachineTrainingLabel,
-    StretchTrainingLabel,
-    WeightTrainingLabel,
-    RunTrainingInner,
-    MachineTrainingInner,
-    StretchTrainingInner,
-    WeightTrainingInner,
+    RunLabel,
+    MachineLabel,
+    StretchLabel,
+    WeightLabel,
+    RunInner,
+    MachineInner,
+    StretchInner,
+    WeightInner,
   },
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   setup(props, ctx) {
@@ -44,13 +44,13 @@ export default defineComponent({
     const currentComponent = computed(() => {
       switch (current.value) {
         case 'run':
-          return RunTrainingInner
+          return RunInner
         case 'machine':
-          return MachineTrainingInner
+          return MachineInner
         case 'stretch':
-          return StretchTrainingInner
+          return StretchInner
         case 'weight':
-          return WeightTrainingInner
+          return WeightInner
       }
     })
 

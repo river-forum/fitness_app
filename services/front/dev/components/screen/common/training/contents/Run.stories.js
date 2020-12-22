@@ -1,12 +1,12 @@
-import RunTrainingInner from './RunTrainingInner.vue'
+import Run from './Run.vue'
 
 export default {
-  title: 'screen/common/trainingLabel/trainingLabelInner/RunTrainingInner',
-  component: RunTrainingInner,
+  title: 'screen/common/training/contents/Run',
+  component: Run,
 }
 
 export const HowToUse = () => ({
-  components: { RunTrainingInner },
+  components: { Run },
   template: `<div class="inner-wrap relative" style="width: 37.5rem">
-  <RunTrainingInner class="m-10"/></div>`,
+  <Run class="m-10"/></div>`,
 })

@@ -1,13 +1,12 @@
-import MachineCard from './MachineCard.vue'
+import Card from './Card.vue'
 
 export default {
-  title:
-    'screen/common/trainingLabel/trainingLabelInner/machineCard/MachineCard',
-  component: MachineCard,
+  title: 'screen/common/training/contents/machine/Card.vue',
+  component: Card,
 }
 
 export const HowToUse = () => ({
-  components: { MachineCard },
+  components: { Card },
   template: `<div class="inner-wrap relative" style="width: 37.5rem">
-  <MachineCard class="m-10"/></div>`,
+  <Card class="m-10"/></div>`,
 })

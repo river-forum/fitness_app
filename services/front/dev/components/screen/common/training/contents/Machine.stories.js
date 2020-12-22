@@ -1,12 +1,12 @@
-import MachineTrainingInner from './MachineTrainingInner.vue'
+import Machine from './Machine.vue'
 
 export default {
-  title: 'screen/common/trainingLabel/trainingLabelInner/MachineTrainingInner',
-  component: MachineTrainingInner,
+  title: 'screen/common/training/contents/Machine.vue',
+  component: Machine,
 }
 
 export const HowToUse = () => ({
-  components: { MachineTrainingInner },
+  components: { Machine },
   template: `<div class="inner-wrap relative" style="width: 37.5rem">
-  <MachineTrainingInner class="m-10"/></div>`,
+  <Machine class="m-10"/></div>`,
 })

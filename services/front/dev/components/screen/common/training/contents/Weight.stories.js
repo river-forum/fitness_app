@@ -1,12 +1,12 @@
-import WeightTrainingInner from './WeightTrainingInner.vue'
+import Weight from './Weight.vue'
 
 export default {
-  title: 'screen/common/trainingLabel/trainingLabelInner/WeightTrainingInner',
-  component: WeightTrainingInner,
+  title: 'screen/common/training/contents/Weight',
+  component: Weight,
 }
 
 export const HowToUse = () => ({
-  components: { WeightTrainingInner },
+  components: { Weight },
   template: `<div class="inner-wrap relative" style="width: 37.5rem">
-  <WeightTrainingInner class="m-10"/></div>`,
+  <Weight class="m-10"/></div>`,
 })

@@ -1,21 +1,21 @@
 <template>
-  <TrainingLabelItem
+  <Frame
     :active="active"
     current-color="#a1c556"
     @click.native="selectedListener"
   >
     <template slot="contents">ストレッチ</template>
-  </TrainingLabelItem>
+  </Frame>
 </template>
 <script>
 import { defineComponent, computed } from '@nuxtjs/composition-api'
-import TrainingLabelItem from './TrainingLabelItem.vue'
+import Frame from './_Frame'
 
 const IDENTIFY = 'stretch'
 
 export default defineComponent({
   components: {
-    TrainingLabelItem,
+    Frame,
   },
   props: {
     current: {

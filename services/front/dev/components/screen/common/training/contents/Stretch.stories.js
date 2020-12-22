@@ -1,12 +1,12 @@
-import StretchTrainingInner from './StretchTrainingInner.vue'
+import Stretch from './Stretch.vue'
 
 export default {
-  title: 'screen/common/trainingLabel/trainingLabelInner/StretchTrainingInner',
-  component: StretchTrainingInner,
+  title: 'screen/common/training/contents/Stretch',
+  component: Stretch,
 }
 
 export const HowToUse = () => ({
-  components: { StretchTrainingInner },
+  components: { Stretch },
   template: `<div class="inner-wrap relative" style="width: 37.5rem">
-  <StretchTrainingInner class="m-10"/></div>`,
+  <Stretch class="m-10"/></div>`,
 })
