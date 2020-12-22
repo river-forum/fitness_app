@@ -22,8 +22,6 @@ exports[`Calendar Component renders correctly 1`] = `
 
         </div>
         <ul class=\\"date__day flex overflow-scroll\\">
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">火</span></button></li>
-          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">水</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">木</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">23</span> <br><span class=\\"day__of-week\\">金</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">24</span> <br><span class=\\"day__of-week\\">土</span></button></li>
@@ -84,6 +82,8 @@ exports[`Calendar Component renders correctly 1`] = `
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">18</span> <br><span class=\\"day__of-week\\">金</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">19</span> <br><span class=\\"day__of-week\\">土</span></button></li>
           <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">20</span> <br><span class=\\"day__of-week\\">日</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">21</span> <br><span class=\\"day__of-week\\">月</span></button></li>
+          <li class=\\"day\\"><button class=\\"day__btn\\"><span class=\\"day__num\\">22</span> <br><span class=\\"day__of-week\\">火</span></button></li>
         </ul>
       </div>
     </div>

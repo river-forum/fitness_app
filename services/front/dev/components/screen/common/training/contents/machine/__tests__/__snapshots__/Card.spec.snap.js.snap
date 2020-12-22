@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders correctly 1`] = `
+"<div class=\\"z-50 bg-white machine-card\\"><button class=\\"absolute z-50 w-12 h-12 bg-gray-600 rounded-full close\\"><span class=\\"absolute top-0 bottom-0 left-0 right-0 w-3/5 h-px m-auto bg-black close__line\\"></span> <span class=\\"absolute top-0 bottom-0 left-0 right-0 w-3/5 h-px m-auto bg-black close__line\\"></span></button>
+  <figure class=\\"relative overflow-hidden machine-card__img-wrap\\"><img src=\\"https://placehold.jp/730x390.png\\" alt=\\"\\" class=\\"absolute top-0 bottom-0 left-0 right-0 object-cover w-full h-full m-auto machine-card__img\\"></figure>
+  <div class=\\"flex items-center text-white machine-card__label\\">
+    <figure class=\\"flex items-center justify-center py-8 machine-card__icon\\"><img src=\\"assets/icons/dumbbell.svg\\" alt=\\"\\" width=\\"25rem\\" height=\\"25rem\\"></figure>
+    <p class=\\"py-8 pl-4 machine-card__title\\">
+
+    </p>
+  </div>
+  <div class=\\"mt-6 machine-card__body\\">
+    <div class=\\"h-48 px-8 overflow-auto l-container\\">
+      <div class=\\"inner-wrap\\">
+        <inputdate></inputdate>
+        <inputnumber type=\\"weight\\" class=\\"mt-6\\"></inputnumber>
+        <inputnumber type=\\"times\\" class=\\"mt-6\\"></inputnumber>
+        <inputnumber type=\\"set\\" class=\\"mt-6\\"></inputnumber> <button button-inner-text=\\"記録する\\" class=\\"mx-auto mt-16\\"></button>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Machine Component renders correctly 1`] = `
+"<div class=\\"test\\">
+  <inputdate></inputdate>
+  <div class=\\"mt-20 accordion-wrapper\\">
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        肩
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        腕
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        胸
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        お腹
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        背中
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        腰
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+    <div class=\\"px-6 accordion\\"><button type=\\"button\\" class=\\"px-2 py-4 text-left accordion__trigger\\">
+        脚
+      </button>
+      <transition-stub name=\\"js-accordion\\">
+        <!---->
+      </transition-stub>
+    </div>
+  </div>
+</div>"
+`;
