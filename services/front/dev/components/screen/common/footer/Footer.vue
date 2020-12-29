@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center justify-between px-8 py-5 max-w-md relative"
+    class="relative flex items-center justify-between px-8 py-5"
     style="background-color: #3b3b3b"
   >
     <div
-      class="absolute text-white rounded-full bg-green-500 cursor-pointer"
+      class="absolute text-white bg-green-500 rounded-full cursor-pointer"
       style="top: 0; left: 50%; transform: translate(-50%, -50%)"
     >
       <img

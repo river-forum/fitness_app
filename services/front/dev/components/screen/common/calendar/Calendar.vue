@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-md calendar">
+  <div class="calendar">
     <div class="relative p-4 pb-0 bg-green-500 calendar__wrap">
       <div class="absolute top-0 right-0 ymd">
         <ul class="flex ymd__contents">
@@ -37,9 +37,9 @@
 </template>
 <script>
 import { defineComponent, ref, computed } from '@nuxtjs/composition-api'
-import CalendarDay from './CalendarDay'
-import CalendarWeek from './CalendarWeek'
-import CalendarMonth from './CalendarMonth'
+import Day from './day/Day'
+import Week from './week/Week'
+import Month from './month/Month'
 
 export default defineComponent({
   setup() {
@@ -48,11 +48,11 @@ export default defineComponent({
     const currentComponent = computed(() => {
       switch (current.value) {
         case 'd':
-          return CalendarDay
+          return Day
         case 'w':
-          return CalendarWeek
+          return Week
         case 'm':
-          return CalendarMonth
+          return Month
       }
     })
 
