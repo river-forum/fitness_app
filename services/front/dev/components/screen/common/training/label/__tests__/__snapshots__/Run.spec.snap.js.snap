@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Run Component renders correctly 1`] = `
+"<div class=\\"w-1/4 text-white label\\"><button class=\\"relative flex items-center justify-center w-full bg-gray-400 label__body\\" style=\\"background-color: rgb(211, 125, 113);\\">
+    <div class=\\"label__item\\">Run</div>
+    <!---->
+  </button></div>"
+`;

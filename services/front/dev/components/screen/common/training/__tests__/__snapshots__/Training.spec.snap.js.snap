@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Training Component renders correctly 1`] = `
+"<div class=\\"label-wrapper\\">
+  <div class=\\"flex\\">
+    <div class=\\"w-1/4 text-white label\\"><button class=\\"relative flex items-center justify-center w-full bg-gray-400 label__body\\" style=\\"background-color: rgb(211, 125, 113);\\">
+        <div class=\\"label__item\\">Run</div>
+        <div class=\\"absolute left-0 right-0 m-auto text-center triangle-wrap\\"><span class=\\"triangle-wrap__item\\" style=\\"border-color: #d37d71 transparent transparent transparent;\\"></span></div>
+      </button></div>
+    <div class=\\"w-1/4 text-white label\\"><button class=\\"relative flex items-center justify-center w-full bg-gray-400 label__body\\" style=\\"background-color: rgb(113, 142, 197);\\">
+        <div class=\\"label__item\\">マシーン</div>
+        <!---->
+      </button></div>
+    <div class=\\"w-1/4 text-white label\\"><button class=\\"relative flex items-center justify-center w-full bg-gray-400 label__body\\" style=\\"background-color: rgb(161, 197, 86);\\">
+        <div class=\\"label__item\\">ストレッチ</div>
+        <!---->
+      </button></div>
+    <div class=\\"w-1/4 text-white label\\"><button class=\\"relative flex items-center justify-center w-full bg-gray-400 label__body\\" style=\\"background-color: rgb(246, 221, 114);\\">
+        <div class=\\"label__item\\">Weight</div>
+        <!---->
+      </button></div>
+  </div>
+  <div class=\\"test mt-10\\">
+    <inputdate></inputdate>
+    <togglebtn button-inner-texts=\\"RUN,BIKE\\" class=\\"mt-12\\"></togglebtn>
+    <inputnumber type=\\"distance\\" class=\\"mt-12\\"></inputnumber> <button button-inner-text=\\"記録する\\" class=\\"mx-auto mt-16\\"></button>
+  </div>
+</div>"
+`;

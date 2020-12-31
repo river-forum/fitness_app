@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Calender />
-    <Footer />
+    <Footer class="fixed bottom-0 left-0" />
   </div>
 </template>
 

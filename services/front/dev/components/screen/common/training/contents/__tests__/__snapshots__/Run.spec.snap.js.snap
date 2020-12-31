@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Run Component renders correctly 1`] = `
+"<div class=\\"test\\">
+  <inputdate></inputdate>
+  <togglebtn button-inner-texts=\\"RUN,BIKE\\" class=\\"mt-12\\"></togglebtn>
+  <inputnumber type=\\"distance\\" class=\\"mt-12\\"></inputnumber> <button button-inner-text=\\"記録する\\" class=\\"mx-auto mt-16\\"></button>
+</div>"
+`;

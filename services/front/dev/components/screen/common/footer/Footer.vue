@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-between px-8 py-5"
+    class="flex items-center justify-between w-full px-8 py-5"
     style="background-color: #3b3b3b"
   >
     <div
