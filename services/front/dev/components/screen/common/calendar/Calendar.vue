@@ -35,6 +35,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { defineComponent, ref, computed } from '@nuxtjs/composition-api'
 import Day from './day/Day'

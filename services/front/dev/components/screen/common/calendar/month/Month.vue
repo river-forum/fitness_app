@@ -3,7 +3,7 @@
     <div
       v-for="record in records"
       :key="record.date.toString()"
-      class="font-bold text-xl pr-6"
+      class="pr-6 text-xl font-bold"
     >
       <p>{{ record.date.month() + 1 }}月</p>
       <template v-if="record.active">
@@ -12,6 +12,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import moment from 'moment'
 import _ from 'lodash'
