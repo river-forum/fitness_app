@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {},
   "engines": {
-    "node": "12"
+    "node": "14"
   },
   "dependencies": {
     "@commitlint/cli": "11.0.0",
