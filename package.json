@@ -11,7 +11,7 @@
   "dependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@types/google-apps-script": "1.0.32",
+    "@types/google-apps-script": "1.0.33",
     "@types/lodash": "4.14.169",
     "husky": "6.0.0",
     "prettier": "2.3.0",
