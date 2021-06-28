@@ -50,7 +50,7 @@
     "@nuxtjs/style-resources": "1.2.0",
     "@nuxtjs/stylelint-module": "4.0.0",
     "@nuxtjs/tailwindcss": "4.2.0",
-    "@storybook/addon-controls": "6.3.0",
+    "@storybook/addon-controls": "6.3.1",
     "@storybook/addon-docs": "6.3.1",
     "@types/moment": "2.13.0",
     "@vue/test-utils": "1.2.1",
