@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@types/google-apps-script/-/google-apps-script-1.0.35.tgz#e0a132c72a103a3fabe45db5ee796b08f02d6359"
   integrity sha512-Vt3iTpxDEsCHubrAu3c6/I+1l30py9P565whqrGPmlIl53Nir7+oXO2/e5U0Suf4LrtG2wvYeljR4kzvOIqJsg==
 
-"@types/lodash@4.14.170":
-  version "4.14.170"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.170.tgz#0d67711d4bf7f4ca5147e9091b847479b87925d6"
-  integrity sha512-bpcvu/MKHHeYX+qeEN8GE7DIravODWdACVA1ctevD8CN24RhPZIKMn9ntfAsrvLfSX3cR5RrBKAbYm9bGs0A+Q==
+"@types/lodash@4.14.171":
+  version "4.14.171"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.171.tgz#f01b3a5fe3499e34b622c362a46a609fdb23573b"
+  integrity sha512-7eQ2xYLLI/LsicL2nejW9Wyko3lcpN6O/z0ZLHrEQsg280zIdCv1t/0m6UtBjUHokCGBQ3gYTbHzDkZ1xOBwwg==
 
 "@types/minimatch@^3.0.3":
   version "3.0.3"
